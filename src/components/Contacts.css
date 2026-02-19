@@ -1,0 +1,47 @@
+/* Contacts — Notion minimalist */
+.contacts-section {
+    padding: 72px 0;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.contact-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow);
+}
+
+.contact-icon {
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+}
+
+.contact-card h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+}
+
+@media (max-width: 600px) {
+    .contacts-section {
+        padding: 48px 0;
+    }
+}

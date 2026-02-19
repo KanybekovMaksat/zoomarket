@@ -1,0 +1,138 @@
+/* About — Notion minimalist */
+.about-section {
+    padding: 72px 0;
+    background: var(--bg-surface);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.about-content .section-title {
+    text-align: left;
+}
+
+.about-text {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.feature-item:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-sm);
+}
+
+.feature-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface);
+    border-radius: var(--radius-sm);
+}
+
+.feature-item h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: var(--text);
+}
+
+.feature-item p {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+.about-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card-stack {
+    position: relative;
+    width: 260px;
+    height: 300px;
+}
+
+.about-emoji-card {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.about-emoji-card:hover {
+    transform: scale(1.05) rotate(0deg) !important;
+    box-shadow: var(--shadow-hover);
+}
+
+.ac-1 {
+    top: 0;
+    left: 0;
+    transform: rotate(-4deg);
+    z-index: 3;
+}
+
+.ac-2 {
+    top: 50px;
+    left: 90px;
+    transform: rotate(3deg);
+    z-index: 2;
+}
+
+.ac-3 {
+    top: 120px;
+    left: 20px;
+    transform: rotate(-1deg);
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-visual {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-section {
+        padding: 48px 0;
+    }
+}

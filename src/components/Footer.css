@@ -1,0 +1,63 @@
+/* Footer — Notion minimalist */
+.footer {
+    background: var(--bg-surface);
+    padding: 48px 0 0;
+    border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding-bottom: 32px;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
+.footer-links h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.footer-links a {
+    display: block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    padding: 3px 0;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border);
+    padding: 16px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,25 @@
+/* OrderModal — Notion minimalist */
+.order-success {
+    text-align: center;
+    padding: 16px;
+}
+
+.order-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.order-success h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.order-success p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.875rem;
+}

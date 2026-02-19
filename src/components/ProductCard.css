@@ -1,0 +1,121 @@
+/* ProductCard — Notion minimalist */
+.product-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
+    animation: fadeInUp .3s ease both;
+}
+
+.product-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-hover);
+}
+
+.product-img {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img::after {
+    display: none;
+}
+
+.product-emoji {
+    font-size: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.product-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    transition: transform .3s ease;
+}
+
+.product-card:hover .product-photo {
+    transform: scale(1.05);
+}
+
+.product-category-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--bg);
+    color: var(--text-secondary);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: var(--radius-xs);
+    z-index: 2;
+    border: 1px solid var(--border);
+}
+
+.product-info {
+    padding: 16px;
+}
+
+.product-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+.product-desc {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    margin-bottom: 14px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.btn-add-cart {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 7px 14px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-add-cart:hover {
+    opacity: 0.9;
+}
+
+.btn-add-cart.added {
+    background: var(--green);
+}
