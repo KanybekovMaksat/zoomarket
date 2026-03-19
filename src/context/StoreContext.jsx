@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useCallback, useEffect } from 'react';
 
 const StoreContext = createContext();
-const API_URL = 'http://localhost:3001/api';
+const API_URL = 'https://amantur-back.onrender.com/api';
 
 export function useStore() {
     return useContext(StoreContext);
